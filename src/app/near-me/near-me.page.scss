@@ -7,3 +7,15 @@
     display: inline-block;
   }
 }
+
+rating {
+  ion-icon {
+    color: gray;
+    font-size: 38px;
+
+    &.filled {
+      color: #ffb400;
+      font-size: 318px;
+    }
+  }
+}

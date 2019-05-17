@@ -16,20 +16,23 @@
       <ion-col>
         <div class="scrolling-wrapper">
           <div class="card">
-            <ion-card size="9"  color="primary">
+            <ion-card size="9" color="primary">
               <ion-card-header>
                 <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
                 <ion-card-title>Card Title</ion-card-title>
               </ion-card-header>
 
-              
+
               <ion-card-content>
+                <rating [rate]="2" readonly="false"
+                  size="10"  (rateChange)="onRateChange($event)">
+                </rating>
                 Keep close to Nature's heart...
               </ion-card-content>
             </ion-card>
           </div>
           <div class="card">
-            <ion-card size="9"  color="secondary">
+            <ion-card size="9" color="secondary">
               <ion-card-header>
                 <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
                 <ion-card-title>Card Title</ion-card-title>
@@ -84,7 +87,11 @@
 
         <ion-list>
           <ion-item>
-            <ion-label>Pokémon Yellow</ion-label>
+            <ion-label>Pokémon Yellow
+              <rating [rate]="rate" readonly="false"
+                  size="default"  (rateChange)="onRateChange($event)">
+                </rating>
+            </ion-label>
           </ion-item>
           <ion-item>
             <ion-label>Mega Man X</ion-label>

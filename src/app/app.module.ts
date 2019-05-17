@@ -10,10 +10,12 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TabsPage } from './tabs/tabs.page';
 
+import { IonicRatingModule } from 'ionic4-rating';
+
 @NgModule({
   declarations: [AppComponent, TabsPage],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicRatingModule],
   providers: [
     StatusBar,
     SplashScreen,

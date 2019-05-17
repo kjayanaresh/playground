@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NearMePage implements OnInit {
 
   constructor() { }
-
+  rate = 3;
   ngOnInit() {
   }
 
